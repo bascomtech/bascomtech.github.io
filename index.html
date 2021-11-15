@@ -1,7 +1,95 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html lang="en-US">
 
-{{ if site.Data.homepage.banner.enable }}
-{{ with site.Data.homepage.banner }}
+<head>
+  <meta charset="utf-8">
+  <title>Bascom Technologies, INC.</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Bascom Technologies">
+  <meta name="author" content="themefisher">
+  <meta name="generator" content="Hugo 0.86.1" />
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://bascomtech.github.io/scss/style.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://bascomtech.github.io/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://bascomtech.github.io/images/favicon.png" type="image/x-icon">
+
+  <!-- multilingual SEO optimizations -->
+  
+
+  
+  <meta property="og:title" content="Bascom Technologies, INC." />
+<meta property="og:description" content="Bascom Technologies" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://bascomtech.github.io/" />
+
+
+  
+  
+
+</head><body id="body">
+	<div class="dividers">
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+		<div class="divider"></div>
+	</div><!-- navigation -->
+<header class="nav-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="/">
+            
+            <img class="img-fluid" width="320px" src="https://bascomtech.github.io/images/logo.jpg" alt="Bascom Technologies, INC.">
+            
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <img src="https://bascomtech.github.io/images/hamburger-icon.png" class="img-fluid" alt="menu">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link page-scroll"
+                  href="https://bascomtech.github.io/">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link page-scroll"
+                  href="https://bascomtech.github.io#mission">About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link page-scroll"
+                  href="https://bascomtech.github.io#products">Products</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link page-scroll"
+                  href="https://bascomtech.github.io#contact">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /navigation -->
+
+
+
 <section class="hero-slider">
   <div class="container-fluid p-0 m-0">
     <div class="row m-0">
@@ -9,125 +97,82 @@
         <div class="hero-slider-wrapper">
           <div class="item">
             <div class="item-image image-reveal" style="animation-delay: 2s;">
-              <img src="{{ .image | absURL }}" alt="slider-image">
+              <img src="https://bascomtech.github.io/images/hero-image/hero-slider-01.jpg" alt="slider-image">
             </div>
             <div class="content">
               <h2>
                 <span class="rev">
-                  {{.title | markdownify}}
+                  Data-Driven Solutions
                 </span>
               </h2>
-              <h3>{{ .content | markdownify }}</h3>
-              {{ if .button.enable }}
-              {{ with .button }}
-              <a href="{{ .link | relURL }}" class="hero-btn btn page-scroll">{{.label}}</a>
-              {{ end }}
-              {{ end }}
+              <h3>Bascom Technologies brings the best-in-class value-added services to our clients in the health and beauty industries.</h3>
+              
+              
+              <a href="/#products" class="hero-btn btn page-scroll">WHAT WE OFFER</a>
+              
+              
             </div>
           </div>
         </div>
       </div>
-      <!--
-      <div class="col-12 text-center">
-        <div class="scroll">
-          <h6>SCROLL</h6>
-        </div>
-      </div>
-      -->
+      
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
 
-{{ if site.Data.homepage.mission.enable }}
-{{ with site.Data.homepage.mission }}
+
+
+
+
 <section class="mission" id="mission">
   <div class="bg">
-    <img src="{{`images/section-bg.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+    <img src="https://bascomtech.github.io/images/section-bg.jpg" class="img-fluid" alt="section-bg">
   </div>
   <div class="right-shape">
-    <img src="{{`images/right-shape.png` | absURL}}" class="img-fluid" alt="right-shape">
+    <img src="https://bascomtech.github.io/images/right-shape.png" class="img-fluid" alt="right-shape">
   </div>
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="section-title">
-          <span>{{.section}}</span>
+          <span>MISSION</span>
         </div>
         <div class="mission-content">
-          <h2><span class="rev">{{ .title | markdownify}}</span></h2>
-          <p>{{ .content | markdownify }}</p>
-<!-- 
-          <div class="video image-reveal">
-            <a class="video-play"
-              data-video="https://www.youtube.com/embed/{{.video_id}}?autoplay=1&showinfo=0&controls=0">
-              <img src="{{ .video_thumb | absURL }}" class="img-fluid" alt="video-thumb">
-              <i class="fa fa-play"></i>
-            </a>
-          </div>
--->
+          <h2><span class="rev">Accelerate Advancement</span></h2>
+          <p>At Bascom Technologies, we focus on developing evidence-based, data-driven solutions to solving complex problems faced by many of our clients. From business intelligence to formulation design, we aim at helping our clients to navigate in today&rsquo;s fast-paced retail market.</p>
+
         </div>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
 
 
-{{ if site.Data.homepage.vision.enable }}
-{{ with site.Data.homepage.vision }}
-<!-- 
-<section class="vision">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-title">
-          <span>{{ .section | markdownify }}</span>
-        </div>
-        <div class="visions">
-          {{ range .vision_item }}
-          <div class="vision-item">
-            <div class="image image-reveal">
-              <img src="{{ .image | absURL }}" class="img-fluid" alt="vision-thumb">
-            </div>
-            <div class="text-content">
-              <h3>{{ .title | markdownify }}</h3>
-              <p>{{ .content | markdownify}}</p>
-            </div>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
-{{ end }}
-{{ end }}
 
-{{ if site.Data.homepage.product.enable }}
-{{ with site.Data.homepage.product }}
+
+
+
+
+
 <section class="products" id="products">
   <div class="bg">
-    <img src="{{`images/section-bg-2.jpg` | absURL}}" class="img-fluid" alt="section-bg">
+    <img src="https://bascomtech.github.io/images/section-bg-2.jpg" class="img-fluid" alt="section-bg">
   </div>
   <div class="left-shape">
-    <img src="{{`images/left-shape.png` | absURL}}" class="img-fluid" alt="left-shape">
+    <img src="https://bascomtech.github.io/images/left-shape.png" class="img-fluid" alt="left-shape">
   </div>
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="section-title">
-          <span>{{.section | markdownify }}</span>
+          <span>Products</span>
         </div>
       </div>
       <div class="col-md-8">
         <div class="text-block">
-          <h2><span class="rev">{{ .title | markdownify }}</span>
+          <h2><span class="rev">Some Of Our Best Products</span>
           </h2>
-          <p>{{ .content | markdownify }}</p>
+          <p>See the innovation that has come through the Rio way. As an advancement company, the goal is to continuously find areas to help business push forward. Below you can find the first product available to help you do so.</p>
         </div>
       </div>
     </div>
@@ -136,100 +181,106 @@
     <div class="row m-0">
       <div class="col-lg-10 ml-auto p-0">
         <div class="product-slider-wrapper">
-          {{ range .product_item }}
+          
           <div class="product-item">
-            <img src="{{ .image | absURL }}" alt="product-image">
+            <img src="https://bascomtech.github.io/images/product/product-02.jpg" alt="product-image">
             <div class="overlay">
               <div class="content">
-                <h5>{{ .title | markdownify }}</h5>
-                <p>{{ .content | markdownify }}</p>
-                <!-- <a href="{{ .project_url | absURL }}">Learn More</a> -->
+                <h5>Business Intelligence</h5>
+                <p></p>
+                <a href="https://bascomtech.github.io">Learn More</a>
               </div>
             </div>
           </div>
-          {{ end }}
+          
+          <div class="product-item">
+            <img src="https://bascomtech.github.io/images/product/product-03.jpg" alt="product-image">
+            <div class="overlay">
+              <div class="content">
+                <h5>Formulation Design</h5>
+                <p></p>
+                <a href="https://bascomtech.github.io">Learn More</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="product-item">
+            <img src="https://bascomtech.github.io/images/product/product-04.jpg" alt="product-image">
+            <div class="overlay">
+              <div class="content">
+                <h5>Corporate Training</h5>
+                <p></p>
+                <a href="https://bascomtech.github.io">Learn More</a>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
 
-{{ if site.Data.homepage.contact.enable }}
-{{ with site.Data.homepage.contact }}
+
+
+
+
 <div class="contact" id="contact">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <div class="section-title">
-          <span>{{ .section | markdownify }}</span>
+          <span>CONTACT US</span>
         </div>
       </div>
       <div class="col-lg-7 ml-auto">
         <div class="text-block">
-          <h2><span class="rev">{{ .title | markdownify }}</span></h2>
-          <p>{{.content | markdownify}}</p>
-          <p>Contact us: {{site.Params.email_info | markdownify}}</p>
+          <h2><span class="rev">reach us</span></h2>
+          <p>The dawn of the digital age and the need for a significant leap forward is here. We believe that every business has the opportunity to move into this new age with the right mindset. Contact us today to begin understanding how Omega can propel your business.</p>
+          <p>Contact us: <a href="mailto:askbascom@gmail.com">askbascom@gmail.com</a></p>
 
           <ul class="social-list list-inline">
-            {{ range site.Params.social }}
+            
             <li class="list-inline-item">
-              <a href="{{ .link | safeURL }}" target="_blank">
-                <i class="fa {{ .icon }}" style="color:#fff"></i>
+              <a href="mailto:askbascom@gmail.com" target="_blank">
+                <i class="fa fa-envelope-o" style="color:#fff"></i>
               </a>
             </li>
-            {{ end }}
+            
+            <li class="list-inline-item">
+              <a href="https://bascomtech.github.io" target="_blank">
+                <i class="fa fa-github" style="color:#fff"></i>
+              </a>
+            </li>
+            
           </ul>
 
         </div>
       </div>
     </div>
-  
   </div>
-   <!-- 
-  <div class="map-div">
-    {{ with site.Params.map }}
-    <div id="map" data-center-lat="{{.map_center_lat}}" data-center-lng="{{.map_center_lng}}" data-position-lat="{{.map_position_lat}}" data-position-lng="{{.map_position_lng}}" data-marker="{{.map_marker | absURL }}" data-name="{{site.Title}}"></div>
-    {{ end }}
    
-    <div class="office">
-      <div class="contents">
-        <img src="{{ .image |absURL}}" alt="office">
-        <div class="address">
-          <h2>{{ site.Params.contact_info | markdownify}}</h2>
-          <ul class="social-list list-inline">
-            {{ range site.Params.social }}
-            <li class="list-inline-item">
-              <a href="{{ .link | safeURL }}" target="_blank">
-                <i class="fa {{ .icon }}"></i>
-              </a>
-            </li>
-            {{ end }}
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-  -->
 </div>
-{{ end }}
-{{ end }}
 
 
-{{ if site.Data.homepage.call_to_action.enable }}
-{{ with site.Data.homepage.call_to_action }}
-<footer class="footer">
 
-  <!-- 
-	<div class="call-to-action text-center">
-		<h2>{{ .title | markdownify }}</h2>
-		<a href="{{.button_link | absURL }}">{{.button_label}}</a>
-	</div>
-  -->
-</footer>
-{{end}}
-{{end}}
 
-{{ end }}
+<div class=".fa-copyright:before"> 2021 Bascom Technologies, INC.
+
+</div>
+
+
+
+<!-- Google Map API -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://bascomtech.github.io/js/script.min.js"></script>
+
+
+</body>
+
+</html>
